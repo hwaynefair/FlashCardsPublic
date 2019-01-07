@@ -17,6 +17,7 @@ export class AddCardComponent implements OnInit {
   @Output() public questionCreated = new EventEmitter();
 
   onSubmit() {
+    this.model.category = 'Angular';
     this.submitted = true;
     const body = JSON.stringify(this.model);
     this._http.post<QA>("api/FlashCards/CreateFlashCard",
