@@ -29,12 +29,7 @@
 
   <ItemGroup>
     <Compile Remove="ArtProject.cs" />
-    <Compile Remove="Context\DB_48034_zenosoftContext.cs" />
     <Compile Remove="Controllers\SampleDataController.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Context\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
