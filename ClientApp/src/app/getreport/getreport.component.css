@@ -1,0 +1,13 @@
+ 
+  #mat-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.your-title, .mat-card-header {
+    /* CSS styles go here */
+ 
+    flex-direction: column !important;
+  }

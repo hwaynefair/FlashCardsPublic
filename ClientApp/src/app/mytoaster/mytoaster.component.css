@@ -1,0 +1,62 @@
+.showToaster{
+    background-color: red;
+    width:200px;height:100px;
+    border-radius: 5px;
+    color:white ;
+    padding:5px;
+    text-align:center;
+    float: right;
+    box-shadow: 5px 5px 5px;
+    visibility:visible;
+    -webkit-animation-duration: 10s;animation-duration: 10s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+ 
+.animated  {
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;animation-duration: 10s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ @keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ .hideToaster {
+    float: right;
+    width:200px;height:100px;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: left top;
+ 
+    -webkit-animation-duration: 10s;animation-duration: 10s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+ }
+ .defaultToasterClass{
+   background-color: red;
+   width:200px;height:100px;
+   border-radius: 5px;
+   color:white ;
+   padding:5px;
+   text-align:center;
+   float: right;
+   box-shadow: 5px 5px 5px;
+   visibility:visible;
+ }
+ .hiddenToaster{
+    visibility:hidden;
+ }

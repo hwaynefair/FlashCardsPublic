@@ -1,0 +1,12 @@
+<div>
+  <h2 md-dialog-title>{{data.header}}</h2>
+  <hr>
+  <mat-dialog-content>
+    <strong>{{data.messagex}}</strong>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions>
+      <button mat-raised-button color="accent"(click)="onCloseConfirm()">CONFIRM</button>&nbsp;
+      <button mat-raised-button color="accent"(click)="onCloseCancel()">CANCEL</button>
+  </mat-dialog-actions>
+</div>
