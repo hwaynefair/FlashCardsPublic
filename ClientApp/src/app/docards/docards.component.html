@@ -1,17 +1,19 @@
 <div id='main' class="mat-app-background">
 
+        <div *ngIf="cardCreated===false  && showReport===false && cardIsEdited===false">
+                <div id="btnPrev">
+                        <button mat-button (click)='movePrev(FlashCardsx.id)'>
+                                <mat-icon>arrow_back_ios</mat-icon>
+                        </button>
+                </div>
 
-        <div id="btnPrev" *ngIf="cardCreated===false  && showReport===false ">
-                <button mat-button (click)='movePrev(FlashCardsx.id)'>
-                        <mat-icon>arrow_back_ios</mat-icon>
-                </button>
+                <div id="btnNext">
+                        <button mat-button (click)='moveNext(FlashCardsx.id)'>
+                                <mat-icon>arrow_forward_ios</mat-icon>
+                        </button>
+                </div>
         </div>
 
-        <div id="btnNext" *ngIf="cardCreated===false  && showReport===false">
-                <button mat-button (click)='moveNext(FlashCardsx.id)'>
-                        <mat-icon>arrow_forward_ios</mat-icon>
-                </button>
-        </div>
         <mat-toolbar color="primary">
 
                 <span>FlashCards</span>
