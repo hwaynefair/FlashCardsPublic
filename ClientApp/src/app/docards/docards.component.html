@@ -6,7 +6,6 @@
                                 <mat-icon>arrow_back_ios</mat-icon>
                         </button>
                 </div>
-
                 <div id="btnNext">
                         <button mat-button (click)='moveNext(FlashCardsx.id)'>
                                 <mat-icon>arrow_forward_ios</mat-icon>
@@ -15,15 +14,13 @@
         </div>
 
         <mat-toolbar color="primary">
-
                 <span>FlashCards</span>
-
                 <span class="example-fill-remaining-space"></span>
                 <button mat-button [mat-menu-trigger-for]="menu">
                         <mat-icon>menu</mat-icon>
                 </button>
-
         </mat-toolbar>
+
         <mat-menu x-position="before" #menu="matMenu">
                 <button mat-menu-item color="accent" (click)='goHome()' matTooltip="Home">
                         <mat-icon>home</mat-icon>Home
@@ -40,26 +37,23 @@
                 <button mat-menu-item color="accent" (click)='getReport()' matTooltip="Get report of all current FlashCards.">
                         <mat-icon>list_alt</mat-icon>Report
                 </button>
-
         </mat-menu>
+
         <div *ngIf="showLoader===true" id="loaderImage"><img src="assets/lg.curve-bars-loading-indicator.gif" height="42"
                         width="42"></div>
         <div *ngIf="cardCreated===false && showReport===false && cardIsEdited===false">
-
 
                 <mat-card *ngIf="showLoader===false && cardIsEdited===false" class="justify-content-center" id="QA">{{IsAnswer
                         ? FlashCardsx.answer : FlashCardsx.question}}</mat-card>
 
                 <div class="floatBottom">
-
                         <button mat-mini-fab color="accent" (click)='getAnswer()' matTooltip="Toggle for answer/question">
                                 <mat-icon>{{IsAnswer ? 'info':'help' }}</mat-icon>
                         </button>
-
                 </div>
+
         </div>
         <div *ngIf="AddRecord===true && cardCreated===true && showReport===false">
-
                 <app-add-card (questionCreated)="cardCreatedMethod(true)"></app-add-card>
         </div>
 
