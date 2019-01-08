@@ -9,24 +9,24 @@ export class DataService {
   }
 
   GetNextRecord(recordNo:number){      
-   return this._http.get<FlashCards>('api/FlashCards/GetFlashCardsNext/' + recordNo);
+   return this._http.get<FlashCards>('https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/GetFlashCardsNext/' + recordNo);
   }
 
   GetPrevRecord(recordNo:number){
-   return this._http.get<FlashCards>('api/FlashCards/GetFlashCardsPrev/' + recordNo)
+   return this._http.get<FlashCards>('https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/GetFlashCardsPrev/' + recordNo)
   }
 
   GetMaxRecordID(){
-    return this._http.get<number>('api/FlashCards/GetFlashCardsCount')
+    return this._http.get<number>('https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/GetFlashCardsCount')
     }
     
     DeleteRecord(recordNo:number){
-      return  this._http.delete<number>('api/FlashCards/RemoveFlashCards/'+ recordNo)
+      return  this._http.delete<number>('https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/RemoveFlashCards/'+ recordNo)
     }
 
     GetFlashCardsReport(){
-      return this._http.get<any>('api/FlashCards/GetFlashCardsReport')
+      return this._http.get<any>('https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/GetFlashCardsReport')
       }
 
 }
-
+ 

@@ -62,8 +62,8 @@
         </div>
 
         <div *ngIf="showReport===true">
-                <app-getreport [tableHeads]="tableHead" [tableDatas]="userDetails" [tableColName]="tableColName"
-                        (closeReport)="reportClosed(false)"></app-getreport>
+                <flashcardreport [tableHeads]="tableHead" [tableDatas]="userDetails" [tableColName]="tableColName"
+                        (closeReport)="reportClosed(false)"></flashcardreport>
         </div>
 
 </div>

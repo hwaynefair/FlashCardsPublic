@@ -18,7 +18,7 @@ import { MatDialogModule } from '@angular/material';
 import {MatTabsModule} from '@angular/material';
 import {MyDialogComponent} from './my-dialog/my-dialog.component'
 import {MatTableModule, MatButtonModule,MatCheckboxModule,MatToolbarModule,MatInputModule,MatProgressSpinnerModule,MatCardModule,MatMenuModule, MatTooltipModule} from '@angular/material';
-import { GetreportComponent } from './getreport/getreport.component'
+import { FlashCardReport } from './flashcardreport//flashcardreport.component'
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { EditcardsComponent } from './editcards/editcards.component';
@@ -29,7 +29,7 @@ import { EditcardsComponent } from './editcards/editcards.component';
     DocardsComponent,
     MytoasterComponent,
     MyDialogComponent,
-    GetreportComponent,
+    FlashCardReport,
     EditcardsComponent
   ],
   imports: [

@@ -2,11 +2,11 @@ import { Component, OnInit, Input, Output, OnChanges, SimpleChanges, EventEmitte
 
 
 @Component({
-  selector: 'app-getreport',
-  templateUrl: './getreport.component.html',
-  styleUrls: ['./getreport.component.css']
+  selector: 'flashcardreport',
+  templateUrl: './flashcardreport.component.html',
+  styleUrls: ['./flashcardreport.component.css']
 })
-  export class GetreportComponent implements OnInit, OnChanges {
+  export class FlashCardReport implements OnInit, OnChanges {
 
     @Input() tableHeads: Array<String> = new Array<String>();
     @Input() tableDatas: Array<any> = new Array<any>();
