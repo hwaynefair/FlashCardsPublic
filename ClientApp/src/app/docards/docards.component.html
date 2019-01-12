@@ -1,5 +1,5 @@
 <div id='main' class="mat-app-background">
-
+<!-- <div><script>$(document).ready(function(){alert(globalA);})()</script></div> -->
         <div *ngIf="cardCreated===false  && showReport===false && cardIsEdited===false">
                 <div id="btnPrev">
                         <button mat-button (click)='movePrev(FlashCardsx.id)'>
@@ -43,7 +43,8 @@
                         width="42"></div>
         <div *ngIf="cardCreated===false && showReport===false && cardIsEdited===false">
 
-                <mat-card *ngIf="showLoader===false && cardIsEdited===false" class="justify-content-center" id="QA">{{IsAnswer
+                <mat-card *ngIf="showLoader===false && cardIsEdited===false" [style.overflow]="'auto'" 
+                [style.height.px]="'200'" style="white-space: pre-wrap;" id="QA">{{IsAnswer
                         ? FlashCardsx.answer : FlashCardsx.question}}</mat-card>
 
                 <div class="floatBottom">
