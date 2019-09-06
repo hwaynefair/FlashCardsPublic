@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CoreAPI21
+﻿namespace CoreAPI21
 {
     public partial class MigrationHistory
     {

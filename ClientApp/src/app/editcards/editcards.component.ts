@@ -26,7 +26,7 @@ export class EditcardsComponent implements OnInit {
   
       const body = JSON.stringify(this.model);
    
-      this._http.put<QA>("https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/EditFlashCard/" + this.currentQA.id,
+      this._http.put<QA>("http://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/EditFlashCard/" + this.currentQA.id,
         body, {
           headers: { 'Content-Type': 'application/json' }
         })
@@ -57,4 +57,3 @@ export class EditcardsComponent implements OnInit {
     }
   
   }
-  

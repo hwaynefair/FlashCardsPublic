@@ -20,7 +20,7 @@ export class AddCardComponent implements OnInit {
     this.model.category = 'Angular';
     this.submitted = true;
     const body = JSON.stringify(this.model);
-    this._http.post<QA>("https://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/CreateFlashCard",
+    this._http.post<QA>("http://www.zenosoftwaresolutions.com/FlashCards/api/FlashCards/CreateFlashCard",
       body, {
         headers: { 'Content-Type': 'application/json' }
       })

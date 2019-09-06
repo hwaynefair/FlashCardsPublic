@@ -8,12 +8,12 @@
 <table class="table-striped table-bordered">
   <thead>
     <tr class="table-head">
-      <th *ngFor="let tableHead of tableHeads">{{tableHead}}</th>
+      <th *ngFor="let tableHead of tableHeads$ | async">{{tableHead}}</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let tableData of tableDatas">
-      <td *ngFor="let colName of tableColNameGenerated"> {{tableData[colName]}}</td>
+    <tr *ngFor="let tableData of tableDatas$ | async">
+      <td *ngFor="let colName of tableColNameGenerated$ | async"> {{tableData[colName]}}</td>
     </tr>
   </tbody>
 </table>  
