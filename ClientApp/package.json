@@ -24,7 +24,7 @@
     "@angular/router": "~7.1.0",
     "@types/jquery": "^3.3.29",
     "bootstrap": "^4.2.1",
-    "browserslist": "^4.7.0",
+    "browserslist": "^4.16.5",
     "caniuse-lite": "^1.0.30000989",
     "core-js": "^2.5.4",
     "ngx-notifier": "^2.0.2",
